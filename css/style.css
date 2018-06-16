@@ -300,7 +300,7 @@
 #particles-js {
   position: absolute;
   width: 90%;
-  height: 90vh;
+  height: 95vh;
   top: 20px;
   left: 0;
   z-index: 6666;
@@ -308,8 +308,8 @@
   animation-duration: 10s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 @-webkit-keyframes fadeIn {
@@ -329,10 +329,10 @@
 }
 
 .home .home-content .hero-title{
-    font-size: 120px;
+    font-size: 110px;
     font-weight: 900;
     letter-spacing: -4px;
-    line-height: 108px;
+    line-height: 100px;
     margin-top: 40px;
 }
 
@@ -1116,14 +1116,18 @@ footer .getintouch strong{
 }
 
 .titlebar .page-title{
-    font-size: 120px;
+    font-size: 100px;
+    line-height: 90px;
     font-weight: 900;
     letter-spacing: -2px;
+    margin-top: 50px;
 }
 
 .titlebar .page-title span{
-    font-size: 120px;
+    font-size: 100px;
+    line-height: 90px;
     font-weight: 900;
+    margin-top: 50px;
 }
 
 .titlebar #particles-js {
@@ -1580,7 +1584,9 @@ textarea.form-message{
     }
 
     .titlebar .page-title, .titlebar .page-title span {
-        font-size: 70px;
+        font-size: 70px!important;
+
+        margin-top: 0px;
     }
 
     .titlebar {
@@ -1733,7 +1739,8 @@ textarea.form-message{
     }
 
     .titlebar .page-title, .titlebar .page-title span {
-        font-size: 50px;
+        font-size: 50px!important;
+        margin-top: 0px;
     }
 
     .titlebar {
@@ -1841,176 +1848,179 @@ textarea.form-message{
         z-index: 10;
     }
 
+    #particles-js {
+      width: 80%;
+  }
+
+  .titlebar .page-title, .titlebar .page-title span {
+    font-size: 30px!important;
+    margin-top: 0px;
+}
+
+.titlebar {
+    padding: 74px 0;
+    height: 130px;
+    text-align: center;
+}
+
+.titlebar #particles-js {
+    height: 130px;
+}
+
+.about .about-text .subtitle {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about .about-text p {
+    font-size: 18px;
+}
+
+.owl-carousel.work-areas .area .title {
+    font-size: 16px;
+}
+
+.owl-carousel.work-areas .area i:before{
+    font-size: 55px;
+}
+
+.about .clients .client figure img {
+    max-width: 70%;
+}
+
+.contact-form input.inp{
+    height: 44px;
+}
+
+.contact .contact-info {
+    font-size: 18px;
+    color: #5f5e5f;
+    font-weight: 500;
+}
+
+.contact-form{
+    margin-top:45px;
+}
 
 
-    .titlebar .page-title, .titlebar .page-title span {
-        font-size: 30px;
-    }
+.full-menu .full-inner nav ul li a {
+    font-size: 27px;
+}
 
-    .titlebar {
-        padding: 74px 0;
-        height: 130px;
-        text-align: center;
-    }
+footer .copyright{
+    text-align: center;
+}
 
-    .titlebar #particles-js {
-        height: 130px;
-    }
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 218px;
+}
 
-    .about .about-text .subtitle {
-        font-size: 20px;
-        line-height: 30px;
-    }
+footer .social {
+    padding-bottom: 10px;
+}
 
-    .about .about-text p {
-        font-size: 18px;
-    }
+.widget-twitter, .tweet ul li  {
+    width: 200px;
+}
 
-    .owl-carousel.work-areas .area .title {
-        font-size: 16px;
-    }
+.tweet ul li  {
+    margin-top: 5px;
+    font-size: 12.5px;
+}
 
-    .owl-carousel.work-areas .area i:before{
-        font-size: 55px;
-    }
+.classic-title {
+    font-size: 20px;
+}
 
-    .about .clients .client figure img {
-        max-width: 70%;
-    }
+.widget-twitter .twitter-account{
+    margin-top: 19px;
+    display: block;
+}
 
-    .contact-form input.inp{
-        height: 44px;
-    }
+.home .home-content .hero-title {
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 39px;
+}
 
-    .contact .contact-info {
-        font-size: 18px;
-        color: #5f5e5f;
-        font-weight: 500;
-    }
+.home .home-content p {
+    font-size: 15px;
+    margin-top: 11px;
+}
 
-    .contact-form{
-        margin-top:45px;
-    }
+.home .home-content .social {
+    display: none;
+}
 
+.cont {
+    width: 90%;
+    margin-left:5%;
+}
 
-    .full-menu .full-inner nav ul li a {
-        font-size: 27px;
-    }
+.news-article .title {
+    font-size: 25px;
+}
 
-    footer .copyright{
-        text-align: center;
-    }
+.portfolio-nav .port-next .nav-title {
+    font-size: 40px;
+}
 
-    body {
-        font-family: 'Montserrat', sans-serif;
-        padding-bottom: 218px;
-    }
+.portfolio-single .title {
+    font-size: 24px !important;
+    line-height: 34px !important;
+}
 
-    footer .social {
-        padding-bottom: 10px;
-    }
+.portfolio-single .information li{
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px;
+}
 
-    .widget-twitter, .tweet ul li  {
-        width: 200px;
-    }
+.portfolio-hero .hero-inner .information li {
+    line-height: 28px;    
+    text-align: center;
+    width: 100%;
+}
 
-    .tweet ul li  {
-        margin-top: 5px;
-        font-size: 12.5px;
-    }
+.portfolio-hero .hero-inner .title {
+    font-size: 24px !important;
+    line-height: 34px;
+}
 
-    .classic-title {
-        font-size: 20px;
-    }
+.portfolio-single.type-2 .subtitle {
+    font-size: 20px;
+}
 
-    .widget-twitter .twitter-account{
-        margin-top: 19px;
-        display: block;
-    }
+.portfolio-video iframe {
+    min-height: 170px;
+}
 
-    .home .home-content .hero-title {
-        font-size: 40px;
-        letter-spacing: -1px;
-        line-height: 39px;
-    }
+.title.bottom_45.top_120 {
+    margin-top: 3px;
+    margin-bottom: 23px;
+}
 
-    .home .home-content p {
-        font-size: 15px;
-        margin-top: 11px;
-    }
+.portfolio-nav .port-next {
+    height: 49px;
+}
 
-    .home .home-content .social {
-        display: none;
-    }
+.portfolio-nav .port-next .nav-title {
+    font-size: 30px;
+}
 
-    .cont {
-        width: 90%;
-        margin-left:5%;
-    }
+.title.bottom_30.top_120{
+    margin-top: 15px;
+}
 
-    .news-article .title {
-        font-size: 25px;
-    }
+.portfolio-nav.text-center.top_90{
+    margin-top: 45px;
+}
 
-    .portfolio-nav .port-next .nav-title {
-        font-size: 40px;
-    }
-
-    .portfolio-single .title {
-        font-size: 24px !important;
-        line-height: 34px !important;
-    }
-
-    .portfolio-single .information li{
-        float: none;
-        text-align: center;
-        margin: 0 auto;
-        line-height: 30px;
-    }
-
-    .portfolio-hero .hero-inner .information li {
-        line-height: 28px;    
-        text-align: center;
-        width: 100%;
-    }
-
-    .portfolio-hero .hero-inner .title {
-        font-size: 24px !important;
-        line-height: 34px;
-    }
-
-    .portfolio-single.type-2 .subtitle {
-        font-size: 20px;
-    }
-
-    .portfolio-video iframe {
-        min-height: 170px;
-    }
-
-    .title.bottom_45.top_120 {
-        margin-top: 3px;
-        margin-bottom: 23px;
-    }
-
-    .portfolio-nav .port-next {
-        height: 49px;
-    }
-
-    .portfolio-nav .port-next .nav-title {
-        font-size: 30px;
-    }
-
-    .title.bottom_30.top_120{
-        margin-top: 15px;
-    }
-
-    .portfolio-nav.text-center.top_90{
-        margin-top: 45px;
-    }
-
-    .wrapper {
-        padding-bottom: 60px;
-    }
+.wrapper {
+    padding-bottom: 60px;
+}
 
 
 }
@@ -2097,7 +2107,7 @@ footer .getintouch strong {
 }
 
 .titlebar .page-title {
-    font-size: 120px;
+    font-size: 100px;
     font-weight: 900;
     letter-spacing: -2px;
     color: #fff;
