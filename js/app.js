@@ -41,7 +41,7 @@ particlesJS('particles-js',
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.4,
       "random": false,
       "anim": {
         "enable": false,
@@ -69,7 +69,7 @@ particlesJS('particles-js',
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 5,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -90,7 +90,7 @@ particlesJS('particles-js',
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
