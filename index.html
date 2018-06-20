@@ -303,52 +303,65 @@
                     <section class="contact col-md-8 offset-md-2">
 
                         <div class="contact-form bottom_120">
-                            <form class="row"  action="get">
-                                <div class="col-md-12">
-                                    <input type="checkbox" onclick="updatePrice(this, 50)">Basic Item
+                            <form class="row" id="form">
+                              <div>
+                                <input type="radio" id="contactChoice1"
+                                name="contact" value="email" onclick="updatePriceSel(this, 10)">
+                                <label for="contactChoice1">Email</label>
+
+                                <input type="radio" id="contactChoice2"
+                                name="contact" value="phone" onclick="updatePriceSel(this, 50)">
+                                <label for="contactChoice2">Phone</label>
+
+                                <input type="radio" id="contactChoice3"
+                                name="contact" value="mail" onclick="updatePriceSel(this, 1000)">
+                                <label for="contactChoice3">Mail</label>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="checkbox" onclick="updatePrice(this, 50)">Basic Item
+                            </div>
+                            <div class="col-md-12">
+                                <input type="checkbox" onclick="updatePrice(this, 42)">Roue de 24 Pouces
+                            </div>
+                            <div class="col-md-12">
+                                <input type="checkbox" onclick="updatePrice(this, 35)">Selle de cuir
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <div>Total</div>
+                                    <div id="price">0</div>
+                                    <div>$</div>
                                 </div>
-                                <div class="col-md-12">
-                                    <input type="checkbox" onclick="updatePrice(this, 42)">Roue de 24 Pouces
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="checkbox" onclick="updatePrice(this, 35)">Selle de cuir
-                                </div>
-                                <div class="col-md-12">
-                                    <div>
-                                        <div>Total</div>
-                                        <div id="price">0</div>
-                                        <div>$</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <input class="inp" type="text" placeholder="Имя">
-                                </div>
-                                <div class="col-md-6">
-                                    <input class="inp" type="text" placeholder="Email">
-                                </div>
-                                <div class="col-md-12">
-                                    <textarea placeholder="Сообщение" rows="6" class="col-md-12 form-message"></textarea>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <input type="submit" value="Отправить" class="site-btn2">
-                                </div>
-                            </form>                    
-                        </div>
-                    </section>
-                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="inp" type="text" placeholder="Имя">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="inp" type="text" placeholder="Email">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea placeholder="Сообщение" rows="6" class="col-md-12 form-message"></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <input type="submit" value="Отправить" class="site-btn2">
+                            </div>
+                        </form>                    
+                    </div>
+                </section>
             </div>
         </div>
     </div>
+</div>
 
 
 
-    <!-- Javascripts -->
-    <script src="js/main.js"></script>
-    <!-- <script src="js/jquery-2.1.4.min.js"></script> -->
-    <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-    <!-- <script src="js/typed.js"></script> -->
-    <!-- <script src="js/jquery.hover3d.js"></script> -->
-    <!-- <script src="js/jquery.cookie-1.4.1.min.js"></script> -->
+<!-- Javascripts -->
+<script src="js/main.js"></script>
+<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
+<script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<!-- <script src="js/typed.js"></script> -->
+<!-- <script src="js/jquery.hover3d.js"></script> -->
+<!-- <script src="js/jquery.cookie-1.4.1.min.js"></script> -->
 
 
 </body>

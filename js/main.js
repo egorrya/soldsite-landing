@@ -1996,10 +1996,22 @@ window.onscroll = function () {
 
 let basePrice = 0;
 let currentPrice = basePrice;
+let prevPrice = 0;
 
 function updatePrice(chk, value) {
   if (chk.checked) {
     currentPrice += value;
+  }
+  else {
+    currentPrice -= value;
+  }
+  document.querySelector("#price").textContent = currentPrice;
+}
+
+function updatePriceSel(chk, value) {
+  if (chk.checked) {
+    currentPrice = currentPrice + value - prevPrice;
+    prevPrice = value;
   }
   else {
     currentPrice -= value;
