@@ -267,7 +267,7 @@
     </div> <!-- wrapper end -->
 
     <footer>
-       <div class="cont">
+     <div class="cont">
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12 copyright">
                 <img src="images/logo.png" alt="">
@@ -300,11 +300,41 @@
                         <h1 class="page-title">Цены</h1>
                     </section>
 
-                    <div class=" row owl-carousel work-areas text-center bottom_90">
-                        
+                    <section class="contact col-md-8 offset-md-2">
 
-                       
-                    </div>
+                        <div class="contact-form bottom_120">
+                            <form class="row"  action="get">
+                                <div class="col-md-12">
+                                    <input type="checkbox" onclick="updatePrice(this, 50)">Basic Item
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="checkbox" onclick="updatePrice(this, 42)">Roue de 24 Pouces
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="checkbox" onclick="updatePrice(this, 35)">Selle de cuir
+                                </div>
+                                <div class="col-md-12">
+                                    <div>
+                                        <div>Total</div>
+                                        <div id="price">0</div>
+                                        <div>$</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="inp" type="text" placeholder="Имя">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="inp" type="text" placeholder="Email">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea placeholder="Сообщение" rows="6" class="col-md-12 form-message"></textarea>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <input type="submit" value="Отправить" class="site-btn2">
+                                </div>
+                            </form>                    
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

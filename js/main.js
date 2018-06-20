@@ -1986,6 +1986,23 @@ function progressBarScroll() {
   document.getElementById("progressBar").style.width = scrolled + "%";
 }
 
+// progress bar
+
 window.onscroll = function () {
   progressBarScroll();
 };
+
+// prices
+
+let basePrice = 0;
+let currentPrice = basePrice;
+
+function updatePrice(chk, value) {
+  if (chk.checked) {
+    currentPrice += value;
+  }
+  else {
+    currentPrice -= value;
+  }
+  document.querySelector("#price").textContent = currentPrice;
+}
