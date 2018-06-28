@@ -1951,26 +1951,10 @@ $('#grid-container').cubeportfolio({
     	$('.modal-btn').toggleClass('display-none');
     });
 
-    // Price 
-
-    $('#radio1').on('change', function() {
-    	if ($(this).is(':checked')) {
-    		$('.price1').removeClass('display-none');
-    	} 
-    });
-
-    $('#radio2').on('change', function() {
-    	if ($(this).is(':checked')) {
-    		$('.price2').removeClass('display-none');
-    	} 
-    });
-
-    $('#check1').click(function(){
-    	$('.check-price1').removeClass('display-none');
-    });
-
-    $('#check2').click(function(){
-    	$('.check-price2').removeClass('display-none');
+	// complex
+    $('.option-com').click(function(){
+    	$('.com-price').toggleClass('display-none');
+    	$('.total-none').toggleClass('display-none');
     });
 
 
@@ -2047,4 +2031,5 @@ function updatePriceSel(chk, value) {
 	}
 	document.querySelector("#price").textContent = currentPrice;
 }
+
 

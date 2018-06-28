@@ -1135,8 +1135,7 @@
      /*------------------------ About Page ------------------------*/
 
      .titlebar{    
-     	padding: 94px 0;
-     	height: 300px;
+     	padding: 80px 0;
      	text-align: center;
      }
 
@@ -1146,7 +1145,7 @@
      	line-height: 82px!important;
      	font-weight: 900;
      	letter-spacing: 0px!important;
-     	margin-top: 50px;
+     	margin-top: 30px;
      }
 
      .titlebar #particles-js {
@@ -2580,6 +2579,14 @@
      	margin: 20px auto 30px;
      }
 
+     .total-none {
+     	-webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
+     	-moz-animation: fadein 0.8s; /* Firefox < 16 */
+     	-ms-animation: fadein 0.8s; /* Internet Explorer */
+     	-o-animation: fadein 0.8s; /* Opera < 12.1 */
+     	animation: fadein 0.8s;
+     }
+
      @media (max-width: 768px) {
      	.total-price div h2,
      	.total-price div h3 {
@@ -2592,7 +2599,7 @@
      	display: inline;
      }
 
-     #price {
+     .price {
      	font-size: 36px;
      	font-weight: 700;
      }
@@ -2656,7 +2663,7 @@
      	box-shadow: 25px 25px 25px rgba(5, 5, 5, .6);
      }
 
-	 /* custom underline */
+     /* custom underline */
 
      .box-e .custom-underline::after {
      	top: 100%;
