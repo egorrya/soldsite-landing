@@ -2695,3 +2695,9 @@
      	content: "";
      	position: absolute;
      }
+
+     .area-title {
+     	color: #fff;
+     	font-weight: 900;
+     	font-size: 50px;
+     }
