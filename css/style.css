@@ -7,7 +7,6 @@
  /*# sourceMappingURL=bootstrap.min.css.map */
 
 
-
  /* --------------------------------- */
  /* Css Styles                        */
  /*---------------------------------- */
@@ -300,6 +299,7 @@
      	display: table;
      	width: 100%;
      	padding: 3%;
+
      }
 
      .display-none {
@@ -356,19 +356,18 @@
      	vertical-align: middle;
      }
 
-
-
      .home .home-content .hero-title{
-     	font-size: 100px;
+     	font-size: 90px;
      	font-weight: 900;
      	letter-spacing: -2px;
-     	line-height: 95px;
+     	line-height: 84px;
      	margin-top: 60px;
      }
 
      .home .home-content p{
-     	font-size: 28px;
-     	line-height: 32px;
+     	font-size: 24px;
+     	line-height: 30px;
+     	padding-right: 20%;
      	color: #b7b7b7;
      	font-weight: 500;
      }
@@ -435,6 +434,10 @@
 
      #portfolio{
      	position: relative;
+     }
+
+     .portfolio div {
+	   text-align: center;
      }
 
      .portfolio .portfolio-filter{
@@ -732,6 +735,22 @@
      	display: none;
      }
 
+     .header-logo {
+     	display: block;
+     	margin-left: -5px;
+     	transition: all ease 0.4s 0.6s;
+     	color: #fff; 
+     	font-weight: 800; 
+     	font-size: 24px
+     }
+
+     .header-logo:hover {
+     	transition: all ease 0.4s 0.6s;
+     	color: #ea0026;
+     	font-weight: 800; 
+     	text-decoration: none;
+     }
+
      .full-open header.white .logo{
      	display: inline;
      }
@@ -981,6 +1000,7 @@
      	position: absolute;
      	height: 4px;
      	width: 100%;
+     	margin-top: -27px;
      	z-index: 1;
      	background: #000;
      	opacity: 1;
@@ -1056,7 +1076,6 @@
      	top: 16px;
      	left: 8px;
      }
-
 
      .nav-icon {
      	float: right;
@@ -1141,8 +1160,8 @@
 
      .titlebar .page-title,
      .titlebar .page-title span{
-     	font-size: 80px!important;
-     	line-height: 82px!important;
+     	font-size: 74px!important;
+     	line-height: 74px!important;
      	font-weight: 900;
      	letter-spacing: 0px!important;
      	margin-top: 30px;
@@ -1577,14 +1596,16 @@
      	}
 
      	.home .home-content .hero-title {
-     		font-size: 90px;
+     		font-size: 64px;
      		font-weight: 900;
-     		letter-spacing: -4px;
-     		line-height: 80px;
+     		letter-spacing: 0px;
+     		line-height: 64px;
      	}
 
      	.home .home-content p {
      		font-size: 20px;
+     		line-height: 24px;
+     		padding-right: 20px;
      		color: #b7b7b7;
      		font-weight: 500;
      	}
@@ -1603,8 +1624,8 @@
      	}
 
      	.titlebar .page-title, .titlebar .page-title span {
-     		font-size: 70px!important;
-     		line-height: 72px!important;
+     		font-size: 60px!important;
+     		line-height: 62px!important;
      		margin-top: 0px;
      	}
 
@@ -1730,13 +1751,15 @@
      	}
 
      	.home .home-content .hero-title {
-     		font-size: 60px;
-     		line-height: 55px;
+     		font-size: 40px;
+     		line-height: 45px;
      	}
 
      	.home .home-content p {
-     		font-size: 20px;
-     		margin-top: 24px;
+     		font-size: 16px;
+     		line-height: 22px;
+     		margin-top: 20px;
+     		padding-right: 20px;
      	}
 
      	.cont {
@@ -1967,6 +1990,7 @@
 
      	.home .home-content p {
      		font-size: 15px;
+     		line-height: 21px;
      		margin-top: 11px;
      	}
 
@@ -2328,7 +2352,7 @@
      .modal-btn-top {
      	padding: 7.75px 45px;
      	position: absolute;
-     	top: 20px;
+     	top: 27px;
      	right: 115px;
      	-webkit-animation-duration: 1.2s;
      	animation-duration: 1.2s;
@@ -2341,7 +2365,7 @@
      @media (max-width: 1024px) {
      	.modal-btn-top {
      		padding: 6.75px 35px;
-     		top: 12.5px;
+     		top: 18px;
      		right: 95px;
      	}
      }
@@ -2349,7 +2373,7 @@
      @media (max-width: 768px) {
      	.modal-btn-top {
      		padding: 5.75px 35px;
-     		top: 10px;
+     		top: 16px;
      		right: 80px;
      		font-size: 14px;
      	}
@@ -2365,65 +2389,38 @@
      	color: #ea0026!important;
      }
 
-     /* слой затемнения */
-     .dm-overlay {
+     .modalDialog {
      	position: fixed;
      	top: 0;
+     	right: 0;
+     	bottom: 0;
      	left: 0;
-     	background: rgba(0, 0, 0, 0.65);
-     	display: none;
+     	background: rgba(31,31,31,0.99) ;
      	overflow: auto;
      	width: 100%;
      	height: 100%;
-     	z-index: 1000;
+     	z-index: 99999;
 
-     	-webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
-     	-moz-animation: fadein 0.8s; /* Firefox < 16 */
-     	-ms-animation: fadein 0.8s; /* Internet Explorer */
-     	-o-animation: fadein 0.8s; /* Opera < 12.1 */
-     	animation: fadein 0.8s;
+     	opacity:0;
+     	-webkit-transition: opacity 400ms ease-in;
+     	-moz-transition: opacity 400ms ease-in;
+     	transition: opacity 400ms ease-in;
+     	pointer-events: none;
      }
 
-     .dm-overlay:target {
-     	display: block;
-
-     	-webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
-     	-moz-animation: fadein 0.8s; /* Firefox < 16 */
-     	-ms-animation: fadein 0.8s; /* Internet Explorer */
-     	-o-animation: fadein 0.8s; /* Opera < 12.1 */
-     	animation: fadein 0.8s;
+     .modalDialog:target {
+     	opacity:1;
+     	pointer-events: auto;
      }
 
-     .dm-table {
-     	display: table;
-     	width: 100%;
-     	height: 100%;
-     }
+     .modalDialog > div {
+     	position: relative;
 
-     .dm-cell {
-     	display: table-cell;
-     	padding: 0.3em;
-     	vertical-align: middle;
-     	text-align: center;
-     }
-
-     .dm-modal {
-     	display: inline-block;
      	padding: 20px;
      	width: 100%;
      	height: 99%;
      	background: rgba(31,31,31,0.98) ;
-     	-webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
-     	-moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
-     	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
      	color: #cfd8dc;
-     	text-align: left;
-
-     	-webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
-     	-moz-animation: fadein 0.8s; /* Firefox < 16 */
-     	-ms-animation: fadein 0.8s; /* Internet Explorer */
-     	-o-animation: fadein 0.8s; /* Opera < 12.1 */
-     	animation: fadein 0.8s;
      }
 
      @keyframes fadein {
@@ -2456,7 +2453,6 @@
      }
 
      /*progress bar*/
-
 
      .progress-header {
      	position: fixed;
@@ -2532,15 +2528,24 @@
      	margin-left: -45px;
      }
 
-     @media (min-width: 768px) and (max-width: 862px) {
+     @media (max-width: 768px) {
      	.modal-title {
-     		margin-bottom: 60px; 
+     		margin-bottom: 0px!important;
+     		padding: 100px 0 0px!important;
+     	}
+     }
+
+     @media (min-width: 768px) and (max-width: 1024px) {
+     	.modal-title {
+     		margin-bottom: 0px!important;
+     		padding: 100px 0 0px!important;
      	}
      }
 
      @media (min-width: 1024px) and (max-width: 1112px) {
      	.modal-title {
-     		margin-bottom: 60px; 
+     		margin-bottom: 60px;
+     		padding: 100px 0 0px!important;
      	}
      }
 

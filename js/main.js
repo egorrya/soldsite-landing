@@ -1928,6 +1928,10 @@ $('#grid-container').cubeportfolio({
 }); 
 
     // contact
+    
+    $('.preloader').toggleClass('display-none');
+    $('.predlagaem').toggleClass('display-none');
+
     $('.modal-btn').click(function(){
     	$('#particles-js').toggleClass('display-none');
     	$('.progress-header').toggleClass('display-none');
