@@ -437,7 +437,7 @@
      }
 
      .portfolio div {
-	   text-align: center;
+     	text-align: center;
      }
 
      .portfolio .portfolio-filter{
@@ -741,7 +741,8 @@
      	transition: all ease 0.4s 0.6s;
      	color: #fff; 
      	font-weight: 800; 
-     	font-size: 24px
+     	font-size: 24px;
+     	max-width: 200px;
      }
 
      .header-logo:hover {
@@ -857,7 +858,17 @@
      	display: block;
      }
 
+     @media (max-width: 459px){
+     	.contact-button {
+     		margin: 0 0 0 28px!important;
+     	}
+     }
 
+     @media (min-width: 460px) and (max-width: 720px){
+     	.contact-button {
+     		margin: 0 0 0 34px!important;
+     	}
+     }
 
      /*------------------------ 2.2 Full Menu ------------------------*/
 
@@ -2389,7 +2400,7 @@
      	color: #ea0026!important;
      }
 
-     .modalDialog {
+     .modal {
      	position: fixed;
      	top: 0;
      	right: 0;
@@ -2408,12 +2419,12 @@
      	pointer-events: none;
      }
 
-     .modalDialog:target {
+     .modal:target {
      	opacity:1;
      	pointer-events: auto;
      }
 
-     .modalDialog > div {
+     .modal > div {
      	position: relative;
 
      	padding: 20px;

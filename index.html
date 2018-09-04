@@ -29,7 +29,9 @@
     </div>
 
     <!-- PRELOADER -->
-    <div class="preloader display-none">
+    <div class="preloader">
+        <span class="disclaimer" style="color: #fff;-webkit-transition: opacity 4000ms ease-in;-moz-transition: opacity 400ms ease-in; transition: opacity 4000ms ease-in;">Для корректной работы сайта, необходимо подключить скрипты.
+         Если вы видите данную надпись, настоятельно рекомендуем обновить браузер.</span>
         <div class="loader">
             <div class="loader-inner"></div>
         </div>
@@ -38,7 +40,7 @@
     <!-- HEADER -->
     <header>
         <a href="" class="header-logo">SOLDSITE.RU</a>
-        <a href="#brief" class="site-btn modal-btn modal-btn-top">Узнать цены</a>
+        <a data-modal="#brief" href="#brief" class="site-btn modal-btn modal-btn-top modal-window">Узнать цены</a>
         <div class="nav-icon">
             <span></span>
             <span></span>
@@ -80,7 +82,7 @@
         <section class="home">
             <div class="home-content">
                 <h1 class="hero-title">Больше чем <br><span>Digital Агентство</span></h1>
-                <p class="top_45">Все виды улучшения бизнеса в одном месте и по привлекательной цене. <br/><span class="predlagaem display-none">Предлагаем</span> <span class="element" data-text1="создание сайтов." data-text2="продвижение в интернете." data-text3="создание бизнес-планов." data-text4="создание фирменного стиля." data-loop="true" data-backdelay="1500"></span></p>
+                <p class="top_45">Все виды улучшения бизнеса в одном месте и по привлекательной цене. <br/><span>Предлагаем</span> <span class="element" data-text1="создание сайтов." data-text2="продвижение в интернете." data-text3="создание бизнес-планов." data-text4="создание фирменного стиля." data-loop="true" data-backdelay="1500"></span></p>
                 <div class="social">
                     <a class="text">подпишись</a>
                     <div class="line"></div>
@@ -144,7 +146,7 @@
                 <div id="grid-container">
                     <!-- Item -->
                     <div class="cbp-item photography">
-                        <a class="modal-window" href="#brief">
+                        <a data-modal="#brief" class="modal-window" href="#brief">
                             <figure class="fig">
                                 <img src="images/0.jpg" alt="">
                                 <figcaption>
@@ -176,7 +178,7 @@
                         </a>
                     </div>
                     <!-- Item -->
-                    <div class="cbp-item branding">
+                    <!-- <div class="cbp-item branding">
                         <a href="portfolio/3.html">
                             <figure class="fig">
                                 <img src="images/5.jpg" alt="">
@@ -185,10 +187,10 @@
                                 </figcaption>
                             </figure>
                         </a>
-                    </div>
+                    </div> -->
                     
                     <!-- Item -->
-                    <div class="cbp-item digital">
+                    <!-- <div class="cbp-item digital">
                         <a href="portfolio/work-3.html">
                             <figure class="fig">
                                 <img src="images/2.jpg" alt="">
@@ -197,9 +199,9 @@
                                 </figcaption>
                             </figure>
                         </a>
-                    </div>
+                    </div> -->
                     <!-- Item -->
-                    <div class="cbp-item branding">
+                    <!-- <div class="cbp-item branding">
                         <a href="portfolio/3.html">
                             <figure class="fig">
                                 <img src="images/3.jpg" alt="">
@@ -208,9 +210,9 @@
                                 </figcaption>
                             </figure>
                         </a>
-                    </div>
+                    </div> -->
                     <!-- Item -->
-                    <div class="cbp-item branding">
+                    <!-- <div class="cbp-item branding">
                         <a href="portfolio/3.html">
                             <figure class="fig">
                                 <img src="images/6.jpg" alt="">
@@ -219,7 +221,7 @@
                                 </figcaption>
                             </figure>
                         </a>
-                    </div>
+                    </div> -->
                     <!-- Item -->
                     <!-- <div class="cbp-item branding">
                         <a href="portfolio/3.html">
@@ -232,8 +234,6 @@
                             </figure>
                         </a>
                     </div> -->
-
-
 
                 </div>
                 <!-- load more button -->
@@ -257,11 +257,11 @@
                     <a href="tel:+79130988586">+7 (913) 098-85-86</a> 
                 </div>
                 <div class="row bottom_30 offset-md-1 col-md-10">
-                    <div class=" col-md-5" style="margin: 0 auto; text-align: center">
-                        <a href="contact.html" class="top_60 site-btn modal-btn">Связаться</a>
+                    <div class="contact-button col-md-5" style="margin: 0 auto; text-align: center">
+                        <a data-modal="#contact" href="#contact" class="top_60 site-btn modal-btn modal-window">Связаться</a>
                     </div>
-                    <div class=" bottom_30 col-md-5" style="margin: 0 auto; text-align: center">
-                        <a href="#brief" class="top_60 site-btn modal-btn">Заказать</a>
+                    <div class="contact-button bottom_30 col-md-5" style="margin: 0 auto; text-align: center">
+                        <a data-modal="#brief" href="#brief" class="top_60 site-btn modal-btn modal-window">Заказать</a>
                     </div>
                 </div>
             </div>
@@ -269,7 +269,7 @@
     </div> <!-- wrapper end -->
 
     <footer>
-     <div class="cont">
+       <div class="cont">
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12 copyright">
                 <a href="" class="header-logo" style="margin-top: 10px;">SOLDSITE.RU</a>
@@ -287,121 +287,157 @@
                 </a>
             </div>
         </div>
-    </div>
-</footer>
-
-<div class="modalDialog" id="brief">
+    </footer>
     <div>
-        <a href="#close" class="close-modal"><i class="fas fa-times fa-3x" style="color: #fff; position: absolute;right: 40px"></i></a>
+        <div class="modal" id="brief">
+            <div>
+                <a href="#close" class="close-modal"><i class="fas fa-times fa-3x" style="color: #fff; position: absolute;right: 40px"></i></a>
 
-        <div class="cont">
-            <section class="titlebar modal-title">
-                <h1 class="page-title">Заполните бриф</h1>
-            </section>
+                <div class="cont">
+                    <section class="titlebar modal-title">
+                        <h1 class="page-title">Заполните бриф</h1>
+                    </section>
 
-            <section class="contact col-md-8 offset-md-2">
+                    <section class="contact col-md-8 offset-md-2">
 
-                <div class="contact-form bottom_120">
-                    <form class="row" id="form">
-                        <div class="option-div">
+                        <div class="contact-form bottom_120">
+                            <form class="row" id="form">
+                                <div class="option-div">
 
-                           <div class="col-md-12 box-e">
-                            <input class="option-input option-com" type="checkbox" id="check-total">
-                            <label class="option-label" for="check-total">Мне нужны <span class="custom-underline">все услуги, представленные ниже</span></label>
-                        </div>
+                                 <div class="col-md-12 box-e">
+                                    <input class="option-input option-com" type="checkbox" id="check-total">
+                                    <label class="option-label" for="check-total">Мне нужны <span class="custom-underline">все услуги, представленные ниже</span></label>
+                                </div>
 
-                        <div class="col-md-12 total-none">
-                            <input class="option-input" type="radio" id="radio0"
-                            name="contact" value="phone" onclick="updatePriceSel(this, 0)"  checked="true">
-                            <label class="option-label" for="radio0">Мне не нужен сайт</label>
-                        </div>
+                                <div class="col-md-12 total-none">
+                                    <input class="option-input" type="radio" id="radio0"
+                                    name="contact" value="phone" onclick="updatePriceSel(this, 0)"  checked="true">
+                                    <label class="option-label" for="radio0">Мне не нужен сайт</label>
+                                </div>
 
-                        <div class="col-md-12 box-e total-none">
-                            <input class="option-input" type="radio" id="radio1"
-                            name="contact" value="phone" onclick="updatePriceSel(this, 8900)">
-                            <label class="option-label" for="radio1">Мне нужен <span class="custom-underline">одностраничный сайт</span></label>
-                        </div>
+                                <div class="col-md-12 box-e total-none">
+                                    <input class="option-input" type="radio" id="radio1"
+                                    name="contact" value="phone" onclick="updatePriceSel(this, 8900)">
+                                    <label class="option-label" for="radio1">Мне нужен <span class="custom-underline">одностраничный сайт</span></label>
+                                </div>
 
-                        <div class="col-md-12 box-e total-none">
-                            <input class="option-input" type="radio" id="radio2"
-                            name="contact" value="phone" onclick="updatePriceSel(this, 12900)">
-                            <label class="option-label" for="radio2">Мне нужен <span class="custom-underline">сайт с возможностью редактирования</span></label>
-                        </div>
+                                <div class="col-md-12 box-e total-none">
+                                    <input class="option-input" type="radio" id="radio2"
+                                    name="contact" value="phone" onclick="updatePriceSel(this, 12900)">
+                                    <label class="option-label" for="radio2">Мне нужен <span class="custom-underline">сайт с возможностью редактирования</span></label>
+                                </div>
 
-                        <div class="col-md-12 box-e total-none">
-                            <input class="option-input" type="radio" id="radio2"
-                            name="contact" value="phone" onclick="updatePriceSel(this, 14900)">
-                            <label class="option-label" for="radio2">Мне нужен <span class="custom-underline">интернет-магазин</span></label>
-                        </div>
+                                <div class="col-md-12 box-e total-none">
+                                    <input class="option-input" type="radio" id="radio2"
+                                    name="contact" value="phone" onclick="updatePriceSel(this, 14900)">
+                                    <label class="option-label" for="radio2">Мне нужен <span class="custom-underline">интернет-магазин</span></label>
+                                </div>
 
-                        <div class="col-md-12 box-e total-none">
-                            <input class="option-input" type="checkbox" id="check1" onclick="updatePrice(this, 4900)">
-                            <label class="option-label" for="check1">Мне нужна <span class="custom-underline">SEO оптимизация сайта</span></label>
-                        </div>
+                                <div class="col-md-12 box-e total-none">
+                                    <input class="option-input" type="checkbox" id="check1" onclick="updatePrice(this, 4900)">
+                                    <label class="option-label" for="check1">Мне нужна <span class="custom-underline">SEO оптимизация сайта</span></label>
+                                </div>
 
 
 
-                        <div class="col-md-12 box-e total-none">
-                            <input class="option-input" type="checkbox" id="check3" onclick="updatePrice(this, 3900)">
-                            <label class="option-label" for="check3">Мне нужна <span class="custom-underline">настройка контекстной рекламы Google Adwords</span></label>
-                        </div>
+                                <div class="col-md-12 box-e total-none">
+                                    <input class="option-input" type="checkbox" id="check3" onclick="updatePrice(this, 3900)">
+                                    <label class="option-label" for="check3">Мне нужна <span class="custom-underline">настройка контекстной рекламы Google Adwords</span></label>
+                                </div>
 
-                        <div class="col-md-12 box-e total-none">
-                            <input class="option-input" type="checkbox" id="check4" onclick="updatePrice(this, 3900)">
-                            <label class="option-label" for="check4">Мне нужна <span class="custom-underline">настройка контекстной рекламы Яндекс.Директ</span></label>
-                        </div>
+                                <div class="col-md-12 box-e total-none">
+                                    <input class="option-input" type="checkbox" id="check4" onclick="updatePrice(this, 3900)">
+                                    <label class="option-label" for="check4">Мне нужна <span class="custom-underline">настройка контекстной рекламы Яндекс.Директ</span></label>
+                                </div>
 
-                        <div class="col-md-12 box-e total-none">
-                            <input class="option-input" type="checkbox" id="check2" onclick="updatePrice(this, 2900)">
-                            <label class="option-label" for="check2">Мне нужен <span class="custom-underline">логотип</span></label>
+                                <div class="col-md-12 box-e total-none">
+                                    <input class="option-input" type="checkbox" id="check2" onclick="updatePrice(this, 2900)">
+                                    <label class="option-label" for="check2">Мне нужен <span class="custom-underline">логотип</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 total-price total-none">
+                                <div>
+                                    <h3><br/>Стоимость работ: </h3>
+                                    <h2 class="price" id="price">0</h2>
+                                    <h2 class="price">р.</h2>
+                                    <h3><br/><br/> Для заказа заполните контактные данные ниже и мы свяжемся.</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 total-price com-price display-none">
+                                <div>
+                                    <h3><br/>Стоимость работ: </h3>
+                                    <h2 class="price"><s>55555 р.</s> 444444 р.</h2>
+                                    <h3><br/><br/> Для заказа заполните контактные данные ниже и мы свяжемся.</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input class="inp" type="text" placeholder="Имя">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="inp" type="text" placeholder="Email">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea placeholder="Сообщение" rows="6" class="col-md-12 form-message"></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <input type="submit" value="Отправить" class="site-btn2">
+                            </div>
+                        </form>     
+                        <div class="top_60" style="margin: 0 auto; text-align: center">
+                            <a href="#close" class="top_60 site-btn modal-btn close-modal">Вернуться на сайт</a>
                         </div>
                     </div>
-
-                    <div class="col-md-12 total-price total-none">
-                        <div>
-                            <h3><br/>Стоимость работ: </h3>
-                            <h2 class="price" id="price">0</h2>
-                            <h2 class="price">р.</h2>
-                            <h3><br/><br/> Для заказа заполните контактные данные ниже и мы свяжемся.</h3>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 total-price com-price display-none">
-                        <div>
-                            <h3><br/>Стоимость работ: </h3>
-                            <h2 class="price"><s>55555 р.</s> 444444 р.</h2>
-                            <h3><br/><br/> Для заказа заполните контактные данные ниже и мы свяжемся.</h3>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <input class="inp" type="text" placeholder="Имя">
-                    </div>
-                    <div class="col-md-6">
-                        <input class="inp" type="text" placeholder="Email">
-                    </div>
-                    <div class="col-md-12">
-                        <textarea placeholder="Сообщение" rows="6" class="col-md-12 form-message"></textarea>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <input type="submit" value="Отправить" class="site-btn2">
-                    </div>
-                </form>     
-                <div class="top_60" style="margin: 0 auto; text-align: center">
-                    <a href="#close" class="top_60 site-btn modal-btn">Вернуться на сайт</a>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
     </div>
-</div>
 
-<!-- Javascripts -->
-<script src="js/main.js"></script>
-<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
-<script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<!-- <script src="js/typed.js"></script> -->
-<!-- <script src="js/jquery.hover3d.js"></script> -->
-<!-- <script src="js/jquery.cookie-1.4.1.min.js"></script> -->
+    <div>
+        <div class="modal" id="contact">
+            <div>
+                <a href="#close" class="close-modal"><i class="fas fa-times fa-3x" style="color: #fff; position: absolute;right: 40px"></i></a>
+
+                <div class="cont">
+                    <section class="titlebar modal-title">
+                        <h1 class="page-title">Контакты</h1>
+                    </section>
+
+                    <section class="contact col-md-8 offset-md-2">
+
+                        <div class="contact-form bottom_120">
+
+                            <div class="col-md-6">
+                                <input class="inp" type="text" placeholder="Имя">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="inp" type="text" placeholder="Email">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea placeholder="Сообщение" rows="6" class="col-md-12 form-message"></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <input type="submit" value="Отправить" class="site-btn2">
+                            </div>
+                        </form>     
+                        <div class="top_60" style="margin: 0 auto; text-align: center">
+                            <a href="#close" class="top_60 site-btn modal-btn close-modal">Вернуться на сайт</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/jquery-2.1.4.min.js"></script> -->
+    <script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <!-- <script src="js/typed.js"></script> -->
+    <!-- <script src="js/jquery.hover3d.js"></script> -->
+    <!-- <script src="js/jquery.cookie-1.4.1.min.js"></script> -->
 
 
 </body>

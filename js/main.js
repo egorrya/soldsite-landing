@@ -1929,15 +1929,25 @@ $('#grid-container').cubeportfolio({
 
     // contact
     
-    $('.preloader').toggleClass('display-none');
-    $('.predlagaem').toggleClass('display-none');
+	$('.disclaimer').toggleClass('display-none');
 
-    $('.modal-btn').click(function(){
-    	$('#particles-js').toggleClass('display-none');
-    	$('.progress-header').toggleClass('display-none');
+    $(".modal-window").on("click", function() {
+    	var modal = $(this).data("modal");
+    	$(modal).show();
     });
 
-	$('.modal-window').click(function(){
+    $(".modal").on("click", function(e) {
+    	var className = e.target.className;
+    	if(className === "modal" || className === "close-modal"){
+    		$(this).closest(".modal").hide();
+    	}
+    });
+
+    $(".close-modal").on("click", function() {
+    	$(this).closest(".modal").hide();
+    });
+
+    $('.modal-window').click(function(){
     	$('#particles-js').toggleClass('display-none');
     	$('.progress-header').toggleClass('display-none');
     });
@@ -1956,10 +1966,10 @@ $('#grid-container').cubeportfolio({
     });
 
 	// complex
-    $('.option-com').click(function(){
-    	$('.com-price').toggleClass('display-none');
-    	$('.total-none').toggleClass('display-none');
-    });
+	$('.option-com').click(function(){
+		$('.com-price').toggleClass('display-none');
+		$('.total-none').toggleClass('display-none');
+	});
 
 
     // OWL CAROUSEL GENERAL JS
