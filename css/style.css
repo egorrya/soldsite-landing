@@ -28,7 +28,7 @@
      body{
      	font-family: 'Montserrat', sans-serif;
      	padding-bottom: 170px;
-     	font-weight: 500;
+     	font-weight: 500!important;
      }
 
      .full-open header{
@@ -41,8 +41,6 @@
      	position: absolute;
      	z-index: 5;
      }
-
-
 
      /* Preloader */
 
@@ -221,7 +219,7 @@
 
      .subtitle{
      	font-size: 22px;
-     	font-weight: bold;
+     	font-weight: bold!important;
      }
 
      .site-btn{
@@ -358,7 +356,7 @@
 
      .home .home-content .hero-title{
      	font-size: 90px;
-     	font-weight: 900;
+     	font-weight: 900!important;
      	letter-spacing: -2px;
      	line-height: 84px;
      	margin-top: 60px;
@@ -374,7 +372,7 @@
 
      .home .home-content p span{
      	color: #000;
-     	font-weight: 900;
+     	font-weight: 900!important;
      }
 
      .home .home-content .social{
@@ -588,7 +586,7 @@
 
      .classic-title{
      	font-size: 22px;
-     	font-weight: bold;
+     	font-weight: bold!important;
      	color: #121212;
      }
 
@@ -1997,6 +1995,7 @@
      		font-size: 38px;
      		letter-spacing: -1px;
      		line-height: 37px;
+     		font-weight: 900!important;
      	}
 
      	.home .home-content p {

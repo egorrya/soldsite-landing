@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Digital Агентство | Soldsite.ru</title>
+	<title>Создание сайтов | Soldsite.ru</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Gorge Portfolio Template">
 	<meta name="keywords" content="personal, portfolio">
@@ -81,8 +81,8 @@
 
         <section class="home">
             <div class="home-content">
-                <h1 class="hero-title">Больше чем <br><span>Digital Агентство</span></h1>
-                <p class="top_45">Все виды улучшения бизнеса в одном месте и по привлекательной цене. <br/><span>Предлагаем</span> <span class="element" data-text1="создание сайтов." data-text2="продвижение в интернете." data-text3="создание бизнес-планов." data-text4="создание фирменного стиля." data-loop="true" data-backdelay="1500"></span></p>
+                <h1 class="hero-title">Создание <br><span>современных</span> сайтов</h1>
+                <p class="top_45">Разработка продающих сайтов и лендингов для любого вида бизнеса. <br/><span>Создание</span> <span class="element" data-text1="лендингов." data-text2="интернет-магазинов." data-text3="онлайн-школ." data-text4="журналов и блогов." data-loop="true" data-backdelay="1500"></span></p>
                 <div class="social">
                     <a class="text">подпишись</a>
                     <div class="line"></div>
@@ -97,40 +97,40 @@
         <div class="cont">
             <!-- WORK AREAS -->
             <section class="titlebar">
-                <h2 class="page-title animated fadeIn"><span>Мы</span> предлагаем</h2>
+                <h2 class="page-title animated fadeIn">Почему <span>Soldsite.ru?</span></h2>
             </section>
 
             <div class=" row owl-carousel work-areas text-center bottom_90">
                 <!-- an area -->
                 <div class="area col-md-6 item bottom_30">
                     <i class="flaticon-012-web-design"></i>
-                    <h3 class="title">Создание сайтов</h3>
+                    <h3 class="title">Современный дизайн</h3>
                     <div class="line"></div>
-                    <p>Лендинги, корпоративные сайты, интернет-магазины и не только.</p>
+                    <p>Пока у конкурентов сайт из начала 2000, ваш сайт прямиком из 2018.</p>
                 </div>
                 <!-- an area -->
                 <div class="area col-md-6 item bottom_30">
                     <i class="flaticon-016-brainstorm"></i>
-                    <h3 class="title" class="title">Создание бизнес-планов</h3>
+                    <h3 class="title" class="title">Консультация</h3>
                     <div class="line"></div>
-                    <p>Покажем, как реализовать бизнес идею через подробный план.</p>
+                    <p>Поможем с любым вопросом.</p>
                 </div>
                 
                 <!-- an area -->
                 <div class="area col-md-6 item bottom_30">
                     <i class="flaticon-019-content-design"></i>
-                    <h3 class="title" class="title">Продвижение в интернете</h3>
+                    <h3 class="title" class="title">Вариативность цен</h3>
                     <div class="line"></div>
-                    <p>Продвижение в соц. сетях и контекстная реклама Google Adwords и Яндекс.Директ.</p>
+                    <p>Поможем реализовать проект с любым бюджетом.</p>
                 </div>
 
 
                 <!-- an area -->
                 <div class="area col-md-6 item bottom_30">
                     <i class="flaticon-025-graphic-design"></i>
-                    <h3 class="title">Фирменный стиль</h3>
+                    <h3 class="title">Мобильные версии</h3>
                     <div class="line"></div>
-                    <p>Визуализируем бренд крутым привлекательным дизайном.</p>
+                    <p>50% трафика идёт с мобильных устройств. Не потеряйте клиента!</p>
                 </div>
             </div>
 
@@ -146,11 +146,11 @@
                 <div id="grid-container">
                     <!-- Item -->
                     <div class="cbp-item photography">
-                        <a data-modal="#brief" class="modal-window" href="#brief">
+                        <a class="modal-window" href="#brief">
                             <figure class="fig">
                                 <img src="images/0.jpg" alt="">
                                 <figcaption>
-                                    <h3>Узнать цены</h3>
+                                    <h3>Перейти</h3>
                                 </figcaption>
                             </figure>
                         </a>
